@@ -29,7 +29,7 @@ let x = document.getElementById('result').value
         if (/[+\-*/]{2,}/.test(x)) {
             let invalid = /([+\-*/]{2,})/.exec(x)?.[1];
             if (invalid && /[+\-*/]{2}/.test(invalid)) {
-              msg.textContent = "Malformed expression";
+              msg.textContent = "Invalid expression";
               document.getElementById('result').value = '';
               return;
             }

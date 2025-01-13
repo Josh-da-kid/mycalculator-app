@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CALCULATOR APP</title>
+  </head>
+
+  <body>
+    <h1 style="text-align: center">Calculator App</h1>
+    <div class="container">
+      <br />
+      <table>
+        <tr>
+          <td colspan="3">
+            <input
+              type="text"
+              id="result"
+              class="screen"
+              style="text-align: right"
+            />
+          </td>
+
+          <td>
+            <input
+              type="button"
+              value="C"
+              id="clear-screen"
+              onclick="clearScreen()"
+              class="clear"
+            />
+          </td>
+        </tr>
+      </table>
+      <p id="msg"></p>
+      <div class="keys">
+        <button class="button" onclick="display('7')"><b>7</b></button>
+        <button class="button" onclick="display('8')"><b>8</b></button>
+        <button class="button" onclick="display('9')"><b>9</b></button>
+        <button class="operator" onclick="display('/')" id="division">
+          <b>/</b>
+        </button>
+
+        <button class="button" onclick="display('4')"><b>4</b></button>
+        <button class="button" onclick="display('5')"><b>5</b></button>
+        <button class="button" onclick="display('6')"><b>6</b></button>
+        <button class="operator" onclick="display('*')"><b>*</b></button>
+
+        <button class="button" onclick="display('1')"><b>1</b></button>
+        <button class="button" onclick="display('2')"><b>2</b></button>
+        <button class="button" onclick="display('3')"><b>3</b></button>
+        <button class="operator" onclick="display('-')"><b>-</b></button>
+
+        <button class="button" onclick="display('0')"><b>0</b></button>
+        <button class="button" onclick="display('.')"><b>.</b></button>
+        <button class="button equal-sign" onclick="solve('=')"><b>=</b></button>
+        <button class="operator" onclick="display('+')"><b>+</b></button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
